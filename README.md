@@ -1,2 +1,2 @@
-# first-server
-Pierwszy serwer
+# Basic first local server
+Hiiiii
