@@ -1,6 +1,7 @@
 import { readFileSync } from "node:fs";
 
 const index_html = readFileSync("static/index.html");
+const favicon_ico = readFileSync("static/favicon.ico");
 
 const pathConfigs = [
   {
@@ -24,7 +25,7 @@ const pathConfigs = [
     allowed_methods: ["GET"],
     handler: (req, res) => {
       res.writeHead(200, { "Content-Type": "image/x-icon" });
-      res.end("Favicon get!\n");
+      res.end(favicon_ico);
     },
   },
 ];
