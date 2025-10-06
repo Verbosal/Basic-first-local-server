@@ -27,7 +27,7 @@ const pathConfigs = [
       res.writeHead(200, { "Content-Type": "image/x-icon" });
       res.end(favicon_ico);
     },
-  },
+  }
 ];
 
 export function handlePath(path, req, res) {
