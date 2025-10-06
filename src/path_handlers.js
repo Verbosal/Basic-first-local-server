@@ -19,6 +19,14 @@ const pathConfigs = [
       res.end("hello world!\n");
     },
   },
+  {
+    path: "/favicon.ico",
+    allowed_methods: ["GET"],
+    handler: (req, res) => {
+      res.writeHead(200, { "Content-Type": "image/x-icon" });
+      res.end("Favicon get!\n");
+    },
+  },
 ];
 
 export function handlePath(path, req, res) {
